@@ -1,0 +1,58 @@
+"".countFor1 STEXT nosplit size=42 args=0x10 locals=0x0 funcid=0x0
+	0x0000 00000 (loop_fast.go:3)	TEXT	"".countFor1(SB), NOSPLIT|ABIInternal, $0-16
+	0x0000 00000 (loop_fast.go:3)	MOVQ	AX, "".s+8(FP)
+	0x0005 00005 (loop_fast.go:3)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0005 00005 (loop_fast.go:3)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0005 00005 (loop_fast.go:3)	FUNCDATA	$5, "".countFor1.arginfo1(SB)
+	0x0005 00005 (loop_fast.go:6)	XORL	CX, CX
+	0x0007 00007 (loop_fast.go:6)	XORL	DX, DX
+	0x0009 00009 (loop_fast.go:5)	JMP	33
+	0x000b 00011 (loop_fast.go:6)	MOVBLZX	(AX)(CX*1), SI
+	0x000f 00015 (loop_fast.go:6)	ANDL	$1, SI
+	0x0012 00018 (loop_fast.go:7)	LEAQ	1(DX), DI
+	0x0016 00022 (loop_fast.go:6)	CMPB	SIB, $1
+	0x001a 00026 (loop_fast.go:7)	CMOVQEQ	DI, DX
+	0x001e 00030 (loop_fast.go:9)	INCQ	CX
+	0x0021 00033 (loop_fast.go:5)	CMPQ	BX, CX
+	0x0024 00036 (loop_fast.go:5)	JGT	11
+	0x0026 00038 (loop_fast.go:12)	MOVQ	DX, AX
+	0x0029 00041 (loop_fast.go:12)	RET
+	0x0000 48 89 44 24 08 31 c9 31 d2 eb 16 0f b6 34 08 83  H.D$.1.1.....4..
+	0x0010 e6 01 48 8d 7a 01 40 80 fe 01 48 0f 44 d7 48 ff  ..H.z.@...H.D.H.
+	0x0020 c1 48 39 cb 7f e5 48 89 d0 c3                    .H9...H...
+"".main STEXT nosplit size=14 args=0x0 locals=0x0 funcid=0x0
+	0x0000 00000 (loop_fast.go:15)	TEXT	"".main(SB), NOSPLIT|ABIInternal, $0-0
+	0x0000 00000 (loop_fast.go:15)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (loop_fast.go:15)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x0000 00000 (<unknown line number>)	NOP
+	0x0000 00000 (loop_fast.go:16)	XORL	AX, AX
+	0x0002 00002 (loop_fast.go:5)	JMP	7
+	0x0004 00004 (loop_fast.go:9)	INCQ	AX
+	0x0007 00007 (loop_fast.go:5)	CMPQ	AX, $1
+	0x000b 00011 (loop_fast.go:5)	JLT	4
+	0x000d 00013 (loop_fast.go:17)	RET
+	0x0000 31 c0 eb 03 48 ff c0 48 83 f8 01 7c f7 c3        1...H..H...|..
+go.cuinfo.packagename. SDWARFCUINFO dupok size=0
+	0x0000 6d 61 69 6e                                      main
+""..inittask SNOPTRDATA size=24
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00                          ........
+go.info."".countFor1$abstract SDWARFABSFCN dupok size=44
+	0x0000 04 2e 63 6f 75 6e 74 46 6f 72 31 00 01 01 11 73  ..countFor1....s
+	0x0010 00 00 00 00 00 00 0c 72 65 73 75 6c 74 00 04 00  .......result...
+	0x0020 00 00 00 0c 69 00 05 00 00 00 00 00              ....i.......
+	rel 0+0 t=23 type.int+0
+	rel 0+0 t=23 type.string+0
+	rel 18+4 t=31 go.info.string+0
+	rel 31+4 t=31 go.info.int+0
+	rel 39+4 t=31 go.info.int+0
+go.string."a" SRODATA dupok size=1
+	0x0000 61                                               a
+gclocals·1a65e721a2ccc325b382662e7ffee780 SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·69c1753bd5f81501d95132d08af04464 SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+"".countFor1.arginfo1 SRODATA static dupok size=7
+	0x0000 fe 00 08 08 08 fd ff                             .......
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........

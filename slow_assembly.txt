@@ -1,0 +1,104 @@
+"".countFor2 STEXT nosplit size=92 args=0x10 locals=0x18 funcid=0x0
+	0x0000 00000 (loop_slow.go:3)	TEXT	"".countFor2(SB), NOSPLIT|ABIInternal, $24-16
+	0x0000 00000 (loop_slow.go:3)	SUBQ	$24, SP
+	0x0004 00004 (loop_slow.go:3)	MOVQ	BP, 16(SP)
+	0x0009 00009 (loop_slow.go:3)	LEAQ	16(SP), BP
+	0x000e 00014 (loop_slow.go:3)	MOVQ	AX, "".s+32(FP)
+	0x0013 00019 (loop_slow.go:3)	FUNCDATA	$0, gclocals·1a65e721a2ccc325b382662e7ffee780(SB)
+	0x0013 00019 (loop_slow.go:3)	FUNCDATA	$1, gclocals·69c1753bd5f81501d95132d08af04464(SB)
+	0x0013 00019 (loop_slow.go:3)	FUNCDATA	$5, "".countFor2.arginfo1(SB)
+	0x0013 00019 (loop_slow.go:6)	XORL	CX, CX
+	0x0015 00021 (loop_slow.go:6)	XORL	DX, DX
+	0x0017 00023 (loop_slow.go:5)	JMP	32
+	0x0019 00025 (loop_slow.go:5)	MOVQ	SI, CX
+	0x001c 00028 (loop_slow.go:5)	NOP
+	0x0020 00032 (loop_slow.go:5)	CMPQ	BX, CX
+	0x0023 00035 (loop_slow.go:5)	JLE	67
+	0x0025 00037 (loop_slow.go:6)	JLS	80
+	0x0027 00039 (loop_slow.go:6)	MOVBLZX	(AX)(CX*1), SI
+	0x002b 00043 (loop_slow.go:6)	ANDL	$1, SI
+	0x002e 00046 (loop_slow.go:6)	CMPB	SIB, $1
+	0x0032 00050 (loop_slow.go:6)	JNE	61
+	0x0034 00052 (loop_slow.go:7)	INCQ	DX
+	0x0037 00055 (loop_slow.go:8)	LEAQ	1(CX), SI
+	0x003b 00059 (loop_slow.go:8)	JMP	25
+	0x003d 00061 (loop_slow.go:10)	LEAQ	1(CX), SI
+	0x0041 00065 (loop_slow.go:10)	JMP	25
+	0x0043 00067 (loop_slow.go:14)	MOVQ	DX, AX
+	0x0046 00070 (loop_slow.go:14)	MOVQ	16(SP), BP
+	0x004b 00075 (loop_slow.go:14)	ADDQ	$24, SP
+	0x004f 00079 (loop_slow.go:14)	RET
+	0x0050 00080 (loop_slow.go:6)	MOVQ	CX, AX
+	0x0053 00083 (loop_slow.go:6)	MOVQ	BX, CX
+	0x0056 00086 (loop_slow.go:6)	PCDATA	$1, $1
+	0x0056 00086 (loop_slow.go:6)	CALL	runtime.panicIndex(SB)
+	0x005b 00091 (loop_slow.go:6)	XCHGL	AX, AX
+	0x0000 48 83 ec 18 48 89 6c 24 10 48 8d 6c 24 10 48 89  H...H.l$.H.l$.H.
+	0x0010 44 24 20 31 c9 31 d2 eb 07 48 89 f1 0f 1f 40 00  D$ 1.1...H....@.
+	0x0020 48 39 cb 7e 1e 76 29 0f b6 34 08 83 e6 01 40 80  H9.~.v)..4....@.
+	0x0030 fe 01 75 09 48 ff c2 48 8d 71 01 eb dc 48 8d 71  ..u.H..H.q...H.q
+	0x0040 01 eb d6 48 89 d0 48 8b 6c 24 10 48 83 c4 18 c3  ...H..H.l$.H....
+	0x0050 48 89 c8 48 89 d9 e8 00 00 00 00 90              H..H........
+	rel 87+4 t=7 runtime.panicIndex+0
+"".main STEXT nosplit size=81 args=0x0 locals=0x18 funcid=0x0
+	0x0000 00000 (loop_slow.go:18)	TEXT	"".main(SB), NOSPLIT|ABIInternal, $24-0
+	0x0000 00000 (loop_slow.go:18)	SUBQ	$24, SP
+	0x0004 00004 (loop_slow.go:18)	MOVQ	BP, 16(SP)
+	0x0009 00009 (loop_slow.go:18)	LEAQ	16(SP), BP
+	0x000e 00014 (loop_slow.go:18)	FUNCDATA	$0, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x000e 00014 (loop_slow.go:18)	FUNCDATA	$1, gclocals·33cdeccccebe80329f1fdbee7f5874cb(SB)
+	0x000e 00014 (<unknown line number>)	NOP
+	0x000e 00014 (loop_slow.go:19)	XORL	AX, AX
+	0x0010 00016 (loop_slow.go:5)	JMP	21
+	0x0012 00018 (loop_slow.go:5)	MOVQ	DX, AX
+	0x0015 00021 (loop_slow.go:5)	CMPQ	AX, $1
+	0x0019 00025 (loop_slow.go:5)	JGE	60
+	0x001b 00027 (loop_slow.go:6)	JCC	70
+	0x001d 00029 (loop_slow.go:6)	LEAQ	go.string."a"(SB), DX
+	0x0024 00036 (loop_slow.go:6)	MOVBLZX	(DX)(AX*1), DX
+	0x0028 00040 (loop_slow.go:6)	ANDL	$1, DX
+	0x002b 00043 (loop_slow.go:6)	CMPB	DL, $1
+	0x002e 00046 (loop_slow.go:6)	JNE	54
+	0x0030 00048 (loop_slow.go:8)	LEAQ	1(AX), DX
+	0x0034 00052 (loop_slow.go:8)	JMP	18
+	0x0036 00054 (loop_slow.go:10)	LEAQ	1(AX), DX
+	0x003a 00058 (loop_slow.go:10)	JMP	18
+	0x003c 00060 (loop_slow.go:20)	MOVQ	16(SP), BP
+	0x0041 00065 (loop_slow.go:20)	ADDQ	$24, SP
+	0x0045 00069 (loop_slow.go:20)	RET
+	0x0046 00070 (loop_slow.go:6)	MOVL	$1, CX
+	0x004b 00075 (loop_slow.go:6)	PCDATA	$1, $0
+	0x004b 00075 (loop_slow.go:6)	CALL	runtime.panicIndex(SB)
+	0x0050 00080 (loop_slow.go:6)	XCHGL	AX, AX
+	0x0000 48 83 ec 18 48 89 6c 24 10 48 8d 6c 24 10 31 c0  H...H.l$.H.l$.1.
+	0x0010 eb 03 48 89 d0 48 83 f8 01 7d 21 73 29 48 8d 15  ..H..H...}!s)H..
+	0x0020 00 00 00 00 0f b6 14 02 83 e2 01 80 fa 01 75 06  ..............u.
+	0x0030 48 8d 50 01 eb dc 48 8d 50 01 eb d6 48 8b 6c 24  H.P...H.P...H.l$
+	0x0040 10 48 83 c4 18 c3 b9 01 00 00 00 e8 00 00 00 00  .H..............
+	0x0050 90                                               .
+	rel 32+4 t=15 go.string."a"+0
+	rel 76+4 t=7 runtime.panicIndex+0
+go.cuinfo.packagename. SDWARFCUINFO dupok size=0
+	0x0000 6d 61 69 6e                                      main
+""..inittask SNOPTRDATA size=24
+	0x0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+	0x0010 00 00 00 00 00 00 00 00                          ........
+go.info."".countFor2$abstract SDWARFABSFCN dupok size=44
+	0x0000 04 2e 63 6f 75 6e 74 46 6f 72 32 00 01 01 11 73  ..countFor2....s
+	0x0010 00 00 00 00 00 00 0c 72 65 73 75 6c 74 00 04 00  .......result...
+	0x0020 00 00 00 0c 69 00 05 00 00 00 00 00              ....i.......
+	rel 0+0 t=23 type.int+0
+	rel 0+0 t=23 type.string+0
+	rel 18+4 t=31 go.info.string+0
+	rel 31+4 t=31 go.info.int+0
+	rel 39+4 t=31 go.info.int+0
+go.string."a" SRODATA dupok size=1
+	0x0000 61                                               a
+gclocals·1a65e721a2ccc325b382662e7ffee780 SRODATA dupok size=10
+	0x0000 02 00 00 00 01 00 00 00 01 00                    ..........
+gclocals·69c1753bd5f81501d95132d08af04464 SRODATA dupok size=8
+	0x0000 02 00 00 00 00 00 00 00                          ........
+"".countFor2.arginfo1 SRODATA static dupok size=7
+	0x0000 fe 00 08 08 08 fd ff                             .......
+gclocals·33cdeccccebe80329f1fdbee7f5874cb SRODATA dupok size=8
+	0x0000 01 00 00 00 00 00 00 00                          ........
